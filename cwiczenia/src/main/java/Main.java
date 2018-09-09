@@ -12,6 +12,15 @@ public class Main {
                 System.out.println("Hello from: " + this.getClass());
             }
         });
+
+    carryOutWork(
+            () -> System.out.println("Hello from lambda")
+    );
+
+    carryOutWork(() -> {
+            System.out.println("Hello from lambda 2");
+            System.out.println("Hello again");
+        });
     }
 
     public static void carryOutWork(Task task) {
@@ -21,4 +30,5 @@ public class Main {
 
         System.out.println("after");
     }
+
 }
