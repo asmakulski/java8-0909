@@ -12,7 +12,7 @@ public class MathMain {
 
         MathOperation max = a -> Collections.max(a);
 
-        getResult(list -> Collections.min(list), numbers);
+        getResult(ints -> Collections.min(ints), numbers);
         getResult(max, numbers);
 
         // to samo co z lambda powyzej
